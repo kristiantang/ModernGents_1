@@ -1,0 +1,6 @@
+﻿@model List<ModernGents_1.Models.Category>
+
+@foreach (var item in Model)
+{                        
+    <li>@Html.ActionLink(item.Name, "Index", "Blog", new { area = "", id=item.Id}, null)</li>
+}

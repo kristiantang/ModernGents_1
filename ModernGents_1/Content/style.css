@@ -1,0 +1,198 @@
+﻿body{
+    background-color: #272F32;
+    color: #ffffff;
+}
+
+.navbar{
+    height: 40px;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav li a, .loginDropdown{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover{
+    color: #ffffff;
+}
+
+.loginDropdown{
+    margin-bottom:0;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    margin: 0;
+    background-color: #222;
+    border-color: rgba(34,34,34,0.15);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-clip: border-box;
+}
+
+.welcomeText, .loginText, .loginBtn{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.loginBtn{
+    background-color: transparent;
+    border-color: transparent;
+    padding-left:0;
+    padding-right:0;
+}
+
+.dropdown-menu li a{
+    padding-left: 0;
+}
+
+.dropdown-menu li a:hover{
+    background-color: transparent;
+}
+
+.body-content{
+}
+
+.indexContent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    margin:-15px;
+    padding:0;
+    overflow: hidden;
+    font-size:0;
+    background-color: #000000;
+}
+
+.indexCategory{
+    padding: 0;
+    overflow: hidden;
+}
+
+.indexCategoryBlue{
+    background-color: #9DBDC6;
+}
+
+.indexCategoryWhite{
+    background-color: #ffffff;
+}
+
+.indexCategoryRed{
+    background-color: #FF3D2E;
+}
+
+.indexCategoryGrey{
+    background-color: #DAEAEF;
+}
+
+.indexImageWidth{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: absolute;
+    top:-25%;
+}
+
+.indexImageHeight{
+    max-height: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: absolute;
+    left: -20%;
+}
+
+.indexImageWidth:hover, .indexImageHeight:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.indexImageText{
+    top:0;
+    margin-top: 35%;
+    position: absolute;
+    width:100%;
+}
+
+.indexImageTextH2{
+    text-align: center; 
+    align-content:center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.indexImageTextFashion .indexImageTextH2{
+    color: #ffffff;
+}
+
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top:10px;
+    padding-bottom: -20px;
+}
+
+footer p{
+    margin-top: 5px;
+}
+
+footer p a{
+    color: #ffffff;
+}
+
+footer p a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mobileHidden{
+    display:block;
+}
+
+.categoryImagePost{
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+    .mobileHidden{
+        display: none;
+    }
+
+    .indexImageText{
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width: 480px){
+}

@@ -1,0 +1,78 @@
+﻿@model ModernGents_1.Models.Category
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="">
+    <div class="row">
+        <div class="col-md-2 col-xs-6 indexCategory">
+            <a href="@Url.Action("Index", "Blog", new { id = 1 })">
+                <img class="indexImageWidth" src="~/Content/image/food.jpg" />
+                <div class="indexImageText">
+                    <h2 class="indexImageTextH2">Food</h2>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory mobileHidden"></div>
+        <div class="col-md-2 col-xs-6 indexCategory indexCategoryGrey">
+            <div class="indexImageText">
+                <h2 class="indexImageTextH2">Modern Gents</h2>
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory mobileHidden"></div>
+        <div class="col-md-2 col-xs-6 indexCategory">
+            <a href="@Url.Action("Index", "Blog", new {id=2})">
+                <img class="indexImageWidth" src="~/Content/image/fashion.jpg" />
+                <div class="indexImageText">
+                    <h2 class="indexImageTextH2">Fashion</h2>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory mobileHidden"></div>
+        <div class="col-md-2 col-xs-6 indexCategory mobileHidden"></div>
+        <div class="col-md-2 col-xs-6 indexCategory">
+            <a href="@Url.Action("Index", "Blog", new {id=3})">
+                <img class="indexImageWidth" src="~/Content/image/tech.jpg" />
+                <div class="indexImageText">
+                    <h2 class="indexImageTextH2">Tech</h2>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory mobileHidden"></div>
+        <div class="col-md-2 col-xs-6 indexCategory indexCategoryBlue">
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory mobileHidden"></div>
+        <div class="col-md-2 col-xs-6 indexCategory">
+            <a href="@Url.Action("Index", "Blog", new {id=4})">
+                <img class="indexImageHeight" src="~/Content/image/career.jpg" />
+                <div class="indexImageText">
+                    <h2 class="indexImageTextH2">Business</h2>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory">
+            <a href="@Url.Action("Index", "Blog", new {id=5})">
+                <img class="indexImageWidth" src="~/Content/image/desgin.jpg" />
+                <div class="indexImageText">
+                    <h2 class="indexImageTextH2">Design</h2>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory"></div>
+        <div class="col-md-2 col-xs-6 indexCategory indexCategoryRed">
+            <a href="@Url.Action("Index","About")">
+                <div class="indexImageText">
+                    <h2 class="indexImageTextH2">About</h2>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xs-6 indexCategory mobileHidden"></div>
+        <div class="col-md-2 col-xs-6 indexCategory indexCategoryGrey">
+            <a href="@Url.Action("Index","Contact")">
+                <div class="indexImageText">
+                    <h2 class="indexImageTextH2">Contact</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

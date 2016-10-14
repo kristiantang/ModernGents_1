@@ -1,0 +1,15 @@
+﻿@model List<ModernGents_1.Models.Posts>
+
+@{
+    ViewBag.Title = "Index";
+}
+@foreach (var item in Model)
+{
+<img src="@item.Image.Url" />
+<h2>@item.Name</h2>
+<p>@item.User.UserName</p>
+<p>@item.Text</p>
+
+}
+
+

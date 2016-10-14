@@ -1,0 +1,20 @@
+﻿@model ModernGents_1.Models.Category
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container">
+    <h2>@Model.Name</h2>
+    <div class="row">
+
+        @foreach (var item in Model.Posts)
+        {
+            <div class="col-md-3 col-xs-6 ">
+                <a href="@Url.Action("Detail","Post", new { id = @item.Id })">
+                    <img class="categoryImagePost" src="@item.Image.Url" />
+                    <h2>@item.Name</h2>
+                    <p>@item.User.UserName</p>
+                </a>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿@model ModernGents_1.Models.LoginViewModel
+
+@using (Html.BeginForm("Login", "Account"))
+                                    {
+@Html.ValidationSummary()
+<li>
+    <div class="form-group">
+        @Html.LabelFor(p => p.UserName, new { @class = "loginText" })
+        @Html.EditorFor(p => p.UserName)
+    </div>
+</li>
+<li>
+    <div class="form-group">
+        @Html.LabelFor(p => p.Password, new { @class = "loginText" })
+        @Html.EditorFor(p => p.Password)
+    </div>
+</li>
+<li>
+    <div class="form-group">
+        @Html.LabelFor(p => p.RememberMe, new { @class = "loginText" })
+        @Html.EditorFor(p => p.RememberMe)
+    </div>
+</li>
+<li>
+    <button type="submit" class="loginBtn">Login</button>
+</li>
+                                    }

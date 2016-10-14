@@ -1,0 +1,240 @@
+﻿.navbar{
+    height: 40px;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav li a, .loginDropdown{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover{
+    color: #ffffff;
+}
+
+.loginDropdown{
+    margin-bottom:0;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    margin: 0;
+    background-color: #222;
+    border-color: rgba(34,34,34,0.15);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-clip: border-box;
+}
+
+.welcomeText, .loginText, .loginBtn{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.loginBtn{
+    background-color: transparent;
+    border-color: transparent;
+    padding-left:0;
+    padding-right:0;
+}
+
+.dropdown-menu li a{
+    padding-left: 0;
+}
+
+.dropdown-menu li a:hover{
+    background-color: transparent;
+}
+
+.body-content{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.indexContent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    font-size:0;
+    background-color: #000000;
+}
+
+.indexCategory{
+    width: 20%;
+    height: 100%;
+    top:0;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.indexImageFood{
+    max-height:100%;
+    left: 50%;
+    margin-left: -35%;
+}
+
+.indexImageFashion{
+    max-height:100%;
+    left: 50%;
+    margin-left: -35%;
+}
+
+.indexImageTech{
+    max-height:100%;
+    left: 50%;
+    margin-left: -30%;
+}
+
+.indexImageCareer{
+    max-height:100%;
+    left: 50%;
+    margin-left: -130%;
+}
+
+.indexImageDesign{
+    max-height:100%;
+    left: 50%;
+    margin-left: -60%;
+}
+
+.indexImage:hover{
+    opacity: 0.5;
+}
+
+.indexImageTextFood, .indexImageTextFashion, .indexImageTextTech, .indexImageTextCareer, .indexImageTextDesign{
+    top:0;
+    left:0;
+    margin-top: 20%;
+    width: 20%;
+    position: absolute;
+}
+
+.indexImageTextFashion{
+    left:20%;
+}
+
+.indexImageTextTech{
+    left:40%;
+}
+
+.indexImageTextCareer{
+    left:60%;
+}
+
+.indexImageTextDesign{
+    left:80%;
+}
+
+.indexImageTextH2{
+    text-align: center; 
+    align-content:center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 40pt;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.indexImageTextFashion .indexImageTextH2{
+    color: #ffffff;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #222;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+footer p a{
+    color: #ffffff;
+}
+
+footer p a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .indexImageFood{
+        max-height:100%;
+        left: 50%;
+        margin-left: -75%;
+    }
+
+    .indexImageFashion{
+        max-height:100%;
+        left: 50%;
+        margin-left: -65%;
+    }
+
+    .indexImageTech{
+        max-height:100%;
+        left: 50%;
+        margin-left: -60%;
+    }
+
+    .indexImageCareer{
+        max-height:100%;
+        left: 50%;
+        margin-left: -250%;
+    }
+
+    .indexImageDesign{
+        max-height:100%;
+        left: 50%;
+        margin-left: -110%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .indexContent{
+        height: auto;
+    }
+
+    .indexCategory{
+        width: 100%;
+    }
+
+    .indexImageTextFood, .indexImageTextFashion, .indexImageTextTech, .indexImageTextCareer, .indexImageTextDesign{
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10%; 
+    }
+    
+    .indexImageTextFashion{
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+}

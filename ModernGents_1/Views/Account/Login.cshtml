@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@model ModernGents_1.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (Request.IsAuthenticated == true)
+{
+    <span>Velkommen @HttpContext.Current.User.Identity.Name</span>
+
+    <a href="@Url.Action("Logout","Account")">Log Ud</a>
+}
+else
+{
+    using (Html.BeginForm("Login", "Account"))
+    {
+        @Html.ValidationSummary()
+        <fieldset>
+            <legend>Login</legend>
+            <div class="form-group">
+                @Html.LabelFor(p => p.UserName)
+                @Html.EditorFor(p => p.UserName)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(p => p.Password)
+                @Html.EditorFor(p => p.Password)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(p => p.RememberMe)
+                @Html.EditorFor(p => p.RememberMe)
+            </div>
+            <button type="submit">Login</button>
+        </fieldset>
+    }
+}

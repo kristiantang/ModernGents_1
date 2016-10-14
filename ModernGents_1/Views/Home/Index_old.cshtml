@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div class="desktopIndex indexContent">
+    <a href="@Url.Action("Index", "Food")">
+        <div class="indexCategory">
+            <picture>
+                <source srcset="~/Content/image/food.jpg" media="(max-width: 1024px)">
+                <source srcset="~/Content/image/food.jpg">
+                <img class="indexImage indexImageFood" src="~/Content/image/food.jpg">
+            </picture>
+            <div class="indexImageTextFood">
+                <h2 class="indexImageTextH2">Food</h2>
+            </div>
+        </div>
+    </a>
+    <a href="@Url.Action("Index", "Fashion")">
+        <div class="indexCategory">
+            <img class="indexImageFashion" src="~/Content/image/fashion.jpg" />
+            <div class="indexImageTextFashion">
+                <h2 class="indexImageTextH2">Fashion</h2>
+            </div>
+        </div>
+    </a>
+    <a href="@Url.Action("Index", "Tech")">
+        <div class="indexCategory">
+            <img class="indexImageTech" src="~/Content/image/tech.jpg" />
+            <div class="indexImageTextTech">
+                <h2 class="indexImageTextH2">Tech</h2>
+            </div>
+        </div>
+    </a>
+    <a href="@Url.Action("Index", "Career")">
+        <div class="indexCategory">
+            <img class="indexImageCareer" src="~/Content/image/career.jpg" />
+            <div class="indexImageTextCareer">
+                <h2 class="indexImageTextH2">Career</h2>
+            </div>
+        </div>
+    </a>
+    <a href="@Url.Action("Index", "Design")">
+        <div class="indexCategory">
+            <img class="indexImageDesign" src="~/Content/image/desgin.jpg" />
+            <div class="indexImageTextDesign">
+                <h2 class="indexImageTextH2">Design</h2>
+            </div>
+        </div>
+    </a>
+</div>

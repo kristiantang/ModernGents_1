@@ -1,0 +1,21 @@
+﻿@model List<ModernGents_1.Models.Posts>
+
+@{
+    ViewBag.Title = "UserPanel";
+}
+
+<h2>UserPanel</h2>
+
+<a href="@Url.Action("Create","Admin")">Create</a>
+
+@foreach (var item in Model)
+{
+    using (Html.BeginForm("UserPanel", "Admin", new { id = item.Id }))
+    {
+        <h4 style="color:#fff;">@item.Name</h4>
+        <a href="@Url.Action("Detail","Post",new { id=@item.Id})">Detail</a>
+        <a href="@Url.Action("Edit","Admin",new { id=@item.Id})">Edit</a>
+        <a href="@Url.Action("Delete","Admin",new { id=@item.Id})">Delete</a>
+
+    }
+}

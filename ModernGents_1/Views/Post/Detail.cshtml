@@ -1,0 +1,12 @@
+﻿@model ModernGents_1.Models.Posts
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <img src="@Model.Image.Url" />
+    <h2>@Model.Name</h2>
+    <p>@Model.User.UserName</p>
+    <p>@Model.Text</p>
+</div>
